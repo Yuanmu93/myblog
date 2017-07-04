@@ -29,6 +29,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.memoryofyou.link']
 # Application definition
 
 INSTALLED_APPS = [
+    'bootstrap_admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,6 +39,9 @@ INSTALLED_APPS = [
     'blog',
     'comments',
 ]
+
+from django.conf import global_settings
+BOOTSTRAP_ADMIN_SIDEBAR_MENU = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
